@@ -1,0 +1,22 @@
+{ lib }:
+let
+  config =
+  {
+    transition = {
+
+      # how long the transition should last.
+      duration_millis = 750;
+
+      # how many frames should be rendered during the transition
+      frames = 45;
+    
+      # the animation to use
+      animation = {
+        style = "slide_horizontal";
+      };
+    };
+  };
+
+  yamlFile = builtins.toFile "config.yaml" (lib.generators.toYAML {} config);
+in
+  yamlFile
