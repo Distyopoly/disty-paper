@@ -1,0 +1,11 @@
+layout {
+    tab name="general" {
+        pane
+        pane size=1 borderless=true {
+            plugin location="compact-bar"
+        }
+    }
+    tab name="present" {
+        pane borderless=true
+    }
+}

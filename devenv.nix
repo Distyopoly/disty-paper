@@ -36,4 +36,19 @@
       in
       ''presenterm -xX "$@" --config-file ${config-file}'';
   };
+
+
+  profiles = {
+    hostname."leswell-nixos".module = {
+      packages = [
+        # pkgs.alacritty
+        pkgs.zellij
+      ];
+
+      scripts = {
+        # ak.exec = "alacritty -T 'Distyopoly: demo' -o 'font.size=21.25'";
+        zmul.exec = "zellij --layout ${./nix/zellij/layout.kdl}";
+      };
+    };
+  };
 }

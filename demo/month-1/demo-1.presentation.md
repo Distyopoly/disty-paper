@@ -10,7 +10,8 @@ location: online
 options:
   implicit_slide_ends: true
   list_item_newlines: 2
-# `title`, `sub_title`, `event`, `location`, `date`, `author`, `authors`, `theme`, `options`
+  auto_render_languages:
+    - mermaid
 theme:
   override:
     footer:
@@ -22,34 +23,34 @@ theme:
 
 ---
 
-<!-- font_size: 1 -->
-
 
 <!-- jump_to_middle -->
 Áttekintés
 ===
 
-<!-- column_layout: [1, 3, 1] -->
-<!-- column: 1 -->
-
-<!-- incremental_lists: true -->
+<!-- alignment: center -->
 
 1. _Sikerültek_ a **kitűzött célok**?
 2. Projekt állapota.
 3. Válasszunk új célokat!
+
+<!-- pause -->
+
+\+ beszéljük át
 <!-- no_footer -->
 
-
-<!-- incremental_lists: false -->
-
-
+<!-- end_slide -->
+<!-- jump_to_middle -->
 Kitűzött Célok
 ===
+
+Mik voltak a célok?
+---
 
 <!-- column_layout: [1, 1] -->
 <!-- column: 0 --> 
 
-# Mik voltak a célok?
+# Célok (nov.18 - dec.17)
 
 - Működő _videóhívás_ 
 - _QR Kód_ felismerés 󰢸
@@ -61,87 +62,72 @@ Kitűzött Célok
 <!-- pause -->
 
 # Rejtett célok
-<!-- incremental_lists: true -->
+
 - Architektúra tervezése 
 - Kezdeti technológia stack kiválasztása 
 - Munkafolyamatok kialakítása 
-<!-- incremental_lists: false -->
-
-
-cél: Működő _videóhívás_
----
-
-1. a webRTC alacsony szintű API  **Jitsy ökoszisztéma** használata 
-2. Jitsy react-SDK
-3. JWT tokenek generálása
-
-<!-- new_lines: 7 -->
 
 <!-- alignment: center -->
-<span style="color: #db1222;">  </span> ➤ 󰢸 ➤  ➤ 
+_projekt állapotánál visszatérek rájuk_
+
+<!-- include: parts/accomplished_goals.md -->
 
 
-cél: _QR Kód_ felismerés
----
-
-<!-- new_lines: 14 -->
-
-<!-- alignment: center -->
-  ➤<span style="color: #db1222;"> 󰢸 </span> ➤  ➤ 
-
-
-cél: _Játéküzenetek_ megjelenítése
----
-
-<!-- new_lines: 14 -->
-
-<!-- alignment: center -->
-  ➤ 󰢸 ➤<span style="color: #db1222;">  </span> ➤ 
-
-
-cél: _Játékállapot_ megjelenítése
----
-
-<!-- new_lines: 14 -->
-
-<!-- alignment: center -->
-  ➤ 󰢸 ➤  ➤<span style="color: #db1222;">  </span>
-
-cél: A projekt felépítése
----
-
-<!-- new_lines: 14 -->
-
-<!-- alignment: center -->
-<span style="color: #db1222;">  </span> ➤  ➤ 
-
-
-cél: Kezdeti technológia stack kiválasztása
----
-
-<!-- new_lines: 14 -->
-
-<!-- alignment: center -->
- ➤ <span style="color: #db1222;">  </span> ➤ 
-
-cél: Munkafolyamatok kialakítása
----
-
-
-<!-- new_lines: 14 -->
-<!-- alignment: center -->
- ➤  ➤ <span style="color: #db1222;">  </span>
-
-
+<!-- end_slide -->
+<!-- jump_to_middle -->
 Projekt Állapota
 ===
 
+<!-- include: parts/project_state.md -->
 
 
+<!-- end_slide -->
+<!-- jump_to_middle -->
 Új célok
 ===
+
+<!-- alignment: center -->
+- Fontos teendők
+- Ötletek
+- Továbbfejlesztési lehetőségek
+
+<!-- include: parts/new_goals.md -->
+
+draft
+===
+![image:width:50%](drafts/[md-presentation]/doge.png)
+
+
+<span style="color: #4f3638;">**\*videóhívás** ➤ QR Kód ➤ Játéküzenetek ➤ Játékállapot</span> 
 
 draft
 ===
 
-<span style="color: #4f3638;">**\*videóhívás** ➤ QR Kód ➤ Játéküzenetek ➤ Játékállapot</span> 
+```mermaid
+---
+title: Animal example
+---
+classDiagram
+    note "From Duck till Zebra"
+    Animal <|-- Duck
+    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
+```
