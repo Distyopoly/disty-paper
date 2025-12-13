@@ -23,7 +23,9 @@ theme:
 
 ---
 
+<!-- include: parts/short_description.md -->
 
+<!-- end_slide -->
 <!-- jump_to_middle -->
 Áttekintés
 ===
@@ -93,12 +95,64 @@ Projekt Állapota
 
 <!-- include: parts/new_goals.md -->
 
+
+<!-- end_slide -->
+<!-- jump_to_middle -->
+Beszélgessünk
+===
+
+<!-- pause -->
+...még valami:
+<!-- pause -->
+>    ameddig beszélgetünk, becsüljük meg a terminál nyújtotta lehetőségeket
+
+```bash +exec +acquire_terminal
+ssh starwarstel.net
+```
+
+Köszönöm a figyelmet!
+===
+# Bemutató során felhasznált eszközök
+- presenterm: md alapú bemutatókészítés (rust)
+- figlet, toilet: ascii art (C)
+- asciinema: terminal közvetítés (rust)
+
+- zellij: terminal emulator (rust)
+- zoxide: okosabb cd (rust)
+- yazi: fájlkezelő (rust)
+
+- git: mentések
+- devenv: környezet kezelése (nix)
+
 draft
 ===
 ![image:width:50%](drafts/[md-presentation]/doge.png)
 
 
 <span style="color: #4f3638;">**\*videóhívás** ➤ QR Kód ➤ Játéküzenetek ➤ Játékállapot</span> 
+
+draft
+===
+```bash +exec_replace +no_background
+curl -s https://mermaid-ascii.art -d mermaid="graph LR\nABC --> DEF"
+```
+
+draft
+===
+```mermaid-ascii +exec_replace +no_background
+graph LR
+    subgraph disty-craft-framework
+        DC_Core[Core Modules]
+        DC_Utils[Utilities / CLI]
+    end
+
+    subgraph core-contract
+
+        GameRecipe[alma]
+        GameRecipe[korte]
+    end
+```
+p
 
 draft
 ===
@@ -130,4 +184,10 @@ classDiagram
         +bool is_wild
         +run()
     }
+```
+
+draft
+---
+```bash +exec
+echo $PWD
 ```

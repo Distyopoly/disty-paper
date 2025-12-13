@@ -20,6 +20,12 @@ Verziózás és release-k
     - szemantikus verziózás [jövőben]
     - commitlint ellenőrzi (git-hook)
 
+```zshi +exec
+export DIRENV_DISABLE=1 # felesleges logok elkerüléséért
+z contract
+git log --pretty=format:"%s" 
+```
+
 <!-- new_lines: 14 -->
 <!-- alignment: center -->
  ➤  ➤ <span style="color: #db1222;">  </span>

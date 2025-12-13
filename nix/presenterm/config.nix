@@ -1,4 +1,4 @@
-{ lib }:
+{ lib, mermaid-ascii, pkgs }:
 let
   config =
   {
@@ -15,8 +15,21 @@ let
         style = "slide_horizontal";
       };
     };
+
+    snippet = {
+      exec = {
+        custom = {
+          zshi = import ./executors/zshi.nix;
+          mermaid-ascii = import ./executors/mermaid-ascii.nix {inherit mermaid-ascii;};
+        };
+      };
+    };
   };
 
-  yamlFile = builtins.toFile "config.yaml" (lib.generators.toYAML {} config);
-in
-  yamlFile
+  # yamlFile = builtins.toFile "config.yaml" (lib.generators.toYAML {} config);
+  yamlFile = pkgs.writeTextFile {
+    name = "config.yaml";
+    text = (lib.generators.toYAML {} config);
+  };
+  in
+    yamlFile

@@ -1,5 +1,12 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, inputs, ... }:
+let
+  mermaid-ascii = inputs.mermaid-ascii.packages.${pkgs.stdenv.system}.default;
+in
 {
+  imports = [
+    ./nix/ssg
+  ];
+
   packages = [
     pkgs.asciinema_3
     # pkgs.slides
@@ -13,6 +20,13 @@
     # pkgs.graph-easy
     pkgs.curl # used by kroki
     pkgs.qrencode
+    pkgs.toilet
+    pkgs.figlet
+    pkgs.cowsay
+    pkgs.lolcat
+    pkgs.zoxide
+    mermaid-ascii
+    pkgs.most
   ];
 
   languages = {
@@ -32,7 +46,7 @@
     uml-render.exec = ''curl -s https://kroki.io/plantuml/txt --data-raw "$@"'';
     present.exec = 
       let
-        config-file = lib.generators.toYAML {} (import ./nix/presenterm/config.nix { inherit lib; });
+        config-file = (import ./nix/presenterm/config.nix { inherit lib mermaid-ascii pkgs; });
       in
       ''presenterm -xX "$@" --config-file ${config-file}'';
   };

@@ -1,6 +1,8 @@
 Játékfejlesztői élmény
 ---
 
-```bash +exec
-uv --project /maindata/project/Distyopoly/distyctl run distyctl -- --help
+```zshi +exec +acquire_terminal
+z ctl
+distyctl --help
+read -r "?Press Enter to continue..."
 ```
