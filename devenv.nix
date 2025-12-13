@@ -27,6 +27,7 @@ in
     pkgs.zoxide
     mermaid-ascii
     pkgs.most
+    pkgs.keep-sorted
   ];
 
   languages = {

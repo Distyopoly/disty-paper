@@ -9,9 +9,9 @@ event: Bevezető demo
 location: online
 options:
   implicit_slide_ends: true
+  command_prefix: "cmd:"
   list_item_newlines: 2
   auto_render_languages:
-    - mermaid
 theme:
   override:
     footer:
@@ -27,7 +27,7 @@ theme:
 
 <!-- end_slide -->
 <!-- jump_to_middle -->
-Áttekintés
+📜 Áttekintés
 ===
 
 <!-- alignment: center -->
@@ -42,8 +42,15 @@ theme:
 <!-- no_footer -->
 
 <!-- end_slide -->
+
+Képzeletindító
+===
+![image](img/blur_back.jpeg)
+
+<!-- end_slide -->
+
 <!-- jump_to_middle -->
-Kitűzött Célok
+📜 Kitűzött Célok
 ===
 
 Mik voltak a célok?
@@ -77,7 +84,7 @@ _projekt állapotánál visszatérek rájuk_
 
 <!-- end_slide -->
 <!-- jump_to_middle -->
-Projekt Állapota
+📜 Projekt Állapota
 ===
 
 <!-- include: parts/project_state.md -->
@@ -85,7 +92,7 @@ Projekt Állapota
 
 <!-- end_slide -->
 <!-- jump_to_middle -->
-Új célok
+📜 Új célok
 ===
 
 <!-- alignment: center -->
@@ -96,10 +103,24 @@ Projekt Állapota
 <!-- include: parts/new_goals.md -->
 
 
+Kérdéseim
+===
+Kész leszek `ETDK`-ig? (május)
+
+Vihetek hasonló bemutatót TDK-ra?
+
+Van esélyem `OTDK`-ra?
+
+
 <!-- end_slide -->
-<!-- jump_to_middle -->
 Beszélgessünk
 ===
+
+<!-- column_layout: [1] -->
+<!-- column: 0 -->
+```bash +exec_replace +no_background
+toilet -f mono12 -F gay "Beszéljük át" -w 200
+```
 
 <!-- pause -->
 ...még valami:
@@ -110,24 +131,33 @@ Beszélgessünk
 ssh starwarstel.net
 ```
 
-Köszönöm a figyelmet!
+🙏 Köszönöm a figyelmet!
 ===
+
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
 # Bemutató során felhasznált eszközök
 - presenterm: md alapú bemutatókészítés (rust)
 - figlet, toilet: ascii art (C)
+- mermaid-ascii: mermaid-ascii render (go)
 - asciinema: terminal közvetítés (rust)
 
 - zellij: terminal emulator (rust)
 - zoxide: okosabb cd (rust)
 - yazi: fájlkezelő (rust)
 
-- git: mentések
+- git: az egész bemutató verziókövetve készült
 - devenv: környezet kezelése (nix)
+
+<!-- column: 1 -->
+## Potencionálisan felhasznált eszközök
+- lazygit
+- nixvim
+- direnv + fd + google/keep-sorted
 
 draft
 ===
 ![image:width:50%](drafts/[md-presentation]/doge.png)
-
 
 <span style="color: #4f3638;">**\*videóhívás** ➤ QR Kód ➤ Játéküzenetek ➤ Játékállapot</span> 
 

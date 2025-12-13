@@ -1,4 +1,4 @@
-Rövid leírás
+Bevezető: játékfejlesztői élmény
 ---
 
 ```bash +exec_replace +no_background
@@ -7,16 +7,16 @@ toilet "Distyopoly" -E "utf8" -t --gay
 ```
 <!-- new_lines: 3 -->
 <!-- alignment: center -->
-Egy **teljes játékfejlesztési** élmény, 
+Egy **teljes _(társas-)_ játékfejlesztési** élmény, 
 
 <!-- newline -->
 <!-- pause -->
-...egy olyan személytől, aki két évig különböző programok kipróbálásával és összehasonlításával töltötte az idejét.
+...egy olyan személytől, aki két évig `programok felfedezésével és hasonlításával töltötte az idejét`.
 <!-- pause -->
 <!-- new_line -->
 <span style="color: red;">(deploy platformmal a jövőben, államvizsga után)</span>
 
-Rövid leírás
+Bevezető: ”Disty-”
 ---
 
 ```bash +exec_replace +no_background
@@ -36,7 +36,34 @@ figlet "opoly"
 cowsay -f actually "Áthídalja a távolságokat" 
 ```
 
-Rövid leírás
+Bevezető: PoC
+---
+```bash +exec_replace +no_background
+figlet "Proof of Concept"
+```
+
+# Első funkció: 
+<!-- new_line -->
+<span style="color: white; background-color: red;">Fizikai kártyák felismerése</span> (kezdetben csak qr-kóddal)  kártyajáték
+
+
+<!-- new_line -->
+<!-- pause -->
+---
+
+
+<!-- new_line -->
+
+1. egyetlen játék kiválasztása: The Mind
+2. játék módosítása, hogy működjön online környezetben: 
+  - Szinkronizált keverés fizikai kártyákkal? ❌
+<!-- new_line -->
+<!-- pause -->
+- 󱞪 megoldás egy problémára  új játék születik: <span style="color: white; background-color: red;"> **Nous** </span>
+
+<span style="color: white; background-color: black;">Elsődleges cél államvizsgára: Nous játék implementációja a megalkotott keretrendszerben</span>
+
+Bevezető: Philosophy
 ---
 
 # Fejlesztői szemlélet
@@ -52,26 +79,15 @@ Rövid leírás
 - **clean code** 
     - észben tartom a jövőbeli fejlesztési ötleteket az architektúrális döntésekben
 
+<!-- pause -->
 
 # Keretrendszer víziója
 <!-- new_line -->
 - **autentikus játékélmény** - a játékok tükrözzék a valós társasjátékok világát
+- ”opinionated” - az alkalmazás struktúráját előre meghatározó feltételezések
+- ”Convention over Configuration” - használatra kész, megfontolt alapértelmezett beállítások biztosítása
 
-Proof of Concept
----
-```bash +exec_replace +no_background
-figlet "PoC"
-```
-
-1. egyetlen játék kiválasztása: The Mind
-2. játék módosítása, hogy működjön online környezetben
-<!-- new_line -->
-<!-- pause -->
-3. új ötlet egy problémára -> új játék születik: <span style="color: white; background-color: red;"> **Nous** </span>
-
-<span style="color: white; background-color: black;">Elsődleges cél államvizsgára: Nous játék implementációja a megalkotott keretrendszerben</span>
-
-Rövid leírás
+Bevezető vége
 ---
 
 ```bash +exec_replace +no_background
