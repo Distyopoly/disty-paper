@@ -9,6 +9,7 @@ Design by contract
 - szigorúan verziózott
 
 ```zshi +exec +acquire_terminal
+; export YAZI_CONFIG_HOME=$PWD/config/yazi
 z craft-core # jump to dir
 yy src/contract # file-manager
 ```
@@ -20,10 +21,11 @@ yy src/contract # file-manager
 # Framework contract strategy
 <!-- new_line -->
 - contract több verziójának támogatása
-- absztrakció a
+- absztrakció a contract verziók felett
 ```zshi +exec +acquire_terminal
+; export YAZI_CONFIG_HOME=$PWD/config/yazi 
 z fra
-yy
+yy src
 ```
 
 <!-- reset_layout -->

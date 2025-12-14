@@ -1,10 +1,11 @@
 {
   filename = "my-script.sh";
   environment = {};
-  hidden_line_prefix = "# ";
+  hidden_line_prefix = "; ";
   commands = [
     [
-      "cat"
+      "zsh"
+      "-i"
       "$pwd/my-script.sh"
     ]
   ];
