@@ -1,6 +1,9 @@
 Bevezető: játékfejlesztői élmény
 ---
 
+<!-- speaker_note: ⏳ 3:00 -->
+<!-- speaker_note: --------------- -->
+
 ```bash +exec_replace +no_background
 # toilet "Distyopoly"
 toilet "Distyopoly" -E "utf8" -t --gay
@@ -15,6 +18,8 @@ Egy **teljes _(társas-)_ játékfejlesztési** élmény,
 <!-- pause -->
 <!-- new_line -->
 <span style="color: red;">(deploy platformmal a jövőben, államvizsga után)</span>
+
+<!-- no_footer -->
 
 Bevezető: ”Disty-”
 ---
@@ -36,6 +41,8 @@ figlet "opoly"
 cowsay -f actually "Áthídalja a távolságokat" 
 ```
 
+<!-- no_footer -->
+
 Bevezető: PoC
 ---
 ```bash +exec_replace +no_background
@@ -51,7 +58,6 @@ figlet "Proof of Concept"
 <!-- pause -->
 ---
 
-
 <!-- new_line -->
 
 1. egyetlen játék kiválasztása: The Mind
@@ -59,9 +65,11 @@ figlet "Proof of Concept"
   - Szinkronizált keverés fizikai kártyákkal? ❌
 <!-- new_line -->
 <!-- pause -->
-- 󱞪 megoldás egy problémára  új játék születik: <span style="color: white; background-color: red;"> **Nous** </span>
+- 󱞪 megoldás  új játék születik: <span style="color: white; background-color: red;"> **Nous** </span>
 
 <span style="color: white; background-color: black;">Elsődleges cél államvizsgára: Nous játék implementációja a megalkotott keretrendszerben</span>
+
+<!-- no_footer -->
 
 Bevezető: Philosophy
 ---
@@ -75,9 +83,10 @@ Bevezető: Philosophy
 
 
 - ”game developer joy” - fontos a játékfejlesztői élmény
-- ”state of the art” megközelítés (törekszem a legtalálóbb projektek integrálására)
 - **clean code** 
-    - észben tartom a jövőbeli fejlesztési ötleteket az architektúrális döntésekben
+    - megoldandó problémák pontos megfogalmazása
+    - figyelembe veszem a jövőbeli fejlesztési ötleteket az architektúrális döntéseknél
+- ”state of the art” megközelítés - törekszem a legtalálóbb megoldások kiválasztására
 
 <!-- pause -->
 
@@ -86,6 +95,8 @@ Bevezető: Philosophy
 - **autentikus játékélmény** - a játékok tükrözzék a valós társasjátékok világát
 - ”opinionated” - az alkalmazás struktúráját előre meghatározó feltételezések
 - ”Convention over Configuration” - használatra kész, megfontolt alapértelmezett beállítások biztosítása
+
+<!-- no_footer -->
 
 Bevezető vége
 ---

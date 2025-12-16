@@ -33,6 +33,4 @@ yy src
 <!-- alignment: center -->
 # Distyctl
 <!-- new_line -->
-**hátra van:** elvárt konvenciók validálása a distyctl által
-
-
+**hátra van:** elvárt konvenciók validálása a CLI (dev és render) parancsok által

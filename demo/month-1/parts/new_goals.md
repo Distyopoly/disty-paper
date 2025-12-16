@@ -5,6 +5,8 @@ Fontos teendők
 <!-- keep-sorted start group_prefixes=|| skip_lines=2 -->
 \# | Feladat | Effort | Pri. | Kategória
 ---|---|---|---|---
+x | Játék komponensek mockolása, a keretrendszer teszteléséért | x  | x | feat
+|| |
 x | Kártyák generálási logikája a frameworkben | x  | x | feat
 || |
 x | Nous egyszerű implementációja  | x  | x | feat

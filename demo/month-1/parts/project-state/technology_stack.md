@@ -2,7 +2,8 @@ Technológia stack
 ---
 # Framework
 
-- Nextjs
+- Nextjs: react keretrendszer
+- Chakra UI: komponens könyvtár
 - Jitsi: videóhívás
 - sok egyéb kisebb projekt
 

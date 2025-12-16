@@ -10,3 +10,10 @@
 # Expand contract with
 
 StateComponent should receive a stateGetter function
+
+
+---
+
+- [ ] presenter_notes md:
+    - glow viewer subtitles
+    - bat watch

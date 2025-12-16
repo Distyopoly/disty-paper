@@ -9,7 +9,7 @@ event: Bevezető demo
 location: online
 options:
   implicit_slide_ends: true
-  command_prefix: "cmd:"
+  command_prefix: "cmd: "
   list_item_newlines: 2
   auto_render_languages:
 theme:
@@ -23,12 +23,29 @@ theme:
 
 ---
 
-<!-- include: parts/short_description.md -->
+<!-- jump_to_middle -->
+<!-- cmd: speaker_note: ⏳ 3:00 -->
+<!-- cmd: speaker_note: --------------- -->
+<!-- cmd: speaker_note: 󱥸 A bemutatót egy kedvcsináló bevezetővel fogom kezdeni, amely bemutatja az elképzelésemet. -->
+Bevezető
+===
+
+
+<!-- include: parts/short_introduction.md -->
+
+Képzeletindító
+===
+![image](img/blur_back.jpeg)
 
 <!-- end_slide -->
+
 <!-- jump_to_middle -->
-📜 Áttekintés
+☰ Áttekintés
 ===
+
+<!-- cmd: speaker_note: 󱥸 A bemutató lényegi részét egy kérdés körbejárásával kezdeném, aztán mesélnék a projekt jelenlegi állapotáról, ezután szeretném, ha meghallgatnád a javaslataimat és kérdéseimet a fejlesztési irányok meghatározásáról.-->
+
+<!-- cmd: speaker_note: 󱥸 Ezek ismeretében pedig szeretném, hogyha átbeszélnénk közösen az egészet (erre 20 percet szántam).-->
 
 <!-- alignment: center -->
 
@@ -39,13 +56,11 @@ theme:
 <!-- pause -->
 
 \+ beszéljük át
+
+
+
+
 <!-- no_footer -->
-
-<!-- end_slide -->
-
-Képzeletindító
-===
-![image](img/blur_back.jpeg)
 
 <!-- end_slide -->
 
@@ -220,4 +235,45 @@ draft
 ---
 ```bash +exec
 echo $PWD
+```
+
+draft
+===
+```mermaid +render
+mindmap
+  root((mindmap))
+    Origins
+      Long history
+      ::icon(fa fa-book)
+      Popularisation
+        British popular psychology author Tony Buzan
+    Research
+      On effectiveness&lt;br/>and features
+      On Automatic creation
+        Uses
+            Creative techniques
+            Strategic planning
+            Argument mapping
+    Tools
+      Pen and paper
+      Mermaid
+```
+
+draft
+---
+
+```mermaid-ascii +exec_replace +no_background 
+flowchart TD
+    A[Project] --> B[Subproject 1]
+    A --> C[Subproject 2]
+    A --> D[Subproject 3]
+
+    B --> B1[Responsibility 1]
+    B --> B2[Responsibility 2]
+
+    C --> C1[Responsibility 1]
+    C --> C2[Responsibility 2]
+
+    D --> D1[Responsibility 1]
+
 ```
