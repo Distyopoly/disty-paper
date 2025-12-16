@@ -49,7 +49,10 @@ in
       let
         config-file = (import ./nix/presenterm/config.nix { inherit lib mermaid-ascii pkgs; });
       in
-      ''presenterm -xX "$@" --config-file ${config-file}'';
+      ''presenterm -xX "$@" --config-file ${config-file} --publish-speaker-notes'';
+    present-notes.exec = ''presenterm --listen-speaker-notes "$@"'';
+
+    runa.exec = ''zola serve -p 1968 --interface $(ip -4 addr show wlo1 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')'';
   };
 
 
