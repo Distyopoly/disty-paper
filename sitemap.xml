@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://dev.distyopoly.xyz/sitemap_style.xsl" type="text/xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://dev.distyopoly.xyz/</loc>
+    </url>
+    <url>
+        <loc>https://dev.distyopoly.xyz/devlog/</loc>
+    </url>
+    <url>
+        <loc>https://dev.distyopoly.xyz/mod/</loc>
+    </url>
+    <url>
+        <loc>https://dev.distyopoly.xyz/repos/</loc>
+    </url>
+</urlset>
